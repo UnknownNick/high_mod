@@ -129,7 +129,7 @@ public class PlayerChunkMapEntry
         else
         {
             this.changes = 0;
-            this.changedSectionFilter = new SectionMask(65536);
+            this.changedSectionFilter = new SectionMask(4096);
             this.sentToPlayers = true;
             Packet<?> packet = new SPacketChunkData(this.chunk, new SectionMask(true));
 
@@ -251,7 +251,7 @@ public class PlayerChunkMapEntry
                 }
 
                 this.changes = 0;
-                this.changedSectionFilter = new SectionMask(65536);
+                this.changedSectionFilter = new SectionMask(4096);
             }
         }
     }

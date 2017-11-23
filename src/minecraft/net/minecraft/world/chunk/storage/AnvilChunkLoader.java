@@ -363,7 +363,7 @@ public class AnvilChunkLoader implements IChunkLoader, IThreadedFileIO
                 	nbttaglist.appendTag(nbttagcompound);
             	} else {
             		NBTTagCompound extensiontag = new NBTTagCompound();
-                	extensiontag.setByte("Y", (byte)(extendedblockstorage.getYLocation() >> 4 & 4095));
+                	extensiontag.setInteger("Y", (extendedblockstorage.getYLocation() >> 4 & 4095));
                 	byte[] abyte = new byte[4096];
                 	NibbleArray nibblearray = new NibbleArray();
                 	NibbleArray nibblearray1 = extendedblockstorage.getData().getDataForNBT(abyte, nibblearray);
