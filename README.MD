@@ -30,3 +30,7 @@ render distance. Skylight updates get extremely long time to finish, so if you
  want to build something very high, consider trying it in the End or Nether
  instead. Generating a world takes longer as more sections are being checked for
  skylight etc. I did not experience major frame rate lag.
+
+## versions
+For now, there is only 1.11.2 client available, when the code will be more or
+less final, server patches and patches for newer MC versions will be published.
